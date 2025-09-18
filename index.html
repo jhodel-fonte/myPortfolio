@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/logo-dark.jpg" type="image/x-icon">
+
+    <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet">  
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="mine-navbar navbar navbar-expand-lg fixed-top bg-dark">
+        <div class="container-fluid ">
+            <div class="logo-container">
+                <a class="navbar-brand" href="#">My Portfolio</a>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="mx-auto d-flex justify-content-center">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">About Me</a>
+                        <a class="nav-link" href="#skills">Skills</a>
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </div>
+                </div>
+                <div class="ms-auto d-flex align-items-center contact">
+                    <button class="btn nav-link" data-bs-toggle="modal" data-bs-target="#contactCardModal">Contact Me</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="contactCardModal" tabindex="-1" aria-labelledby="contactCardModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header border-0">
+            <h5 class="modal-title" id="contactCardModalLabel">Contact Card</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex flex-wrap justify-content-center gap-4">
+            <img src="img/front-calling-card.png" alt="Front Calling Card" class="img-fluid rounded shadow" style="max-width: 700px;">
+            <img src="img/back-calling-card.png" alt="Back Calling Card" class="img-fluid rounded shadow" style="max-width: 700px;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="front-page d-flex justify-content-evenly align-items-center">
+        <div class="text-intro">
+            <h1 class="text-white">Hello, I'm Ralph Joedel Fonte</h1>
+            <p class="text-white">A passionate IT student with a knack for creating different web or mobile Systems.</p>
+        </div>
+        <div class="bg-image-man me-5 mb-3 pe-4">
+        <img src="img/perosn-img.png" alt="Person Image"">
+        </div>
+    </div>
+
+    <div class="skills-data-card" id="skills">
+        <h3 class="text-center">Skills</h3>
+        <div class="container py-5">
+            <div class="row text-center">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 text-white bg-my-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">Experienced in HTML, CSS, JavaScript.
+                            </p>
+                        </div>  
+                    </div> 
+                </div>
+                <div class="col-md-4 mb-3">"
+                    <div class="card h-100 text-white bg-my-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Troubleshooting and Hardware Device Maintenance</h5>
+                            <p class="card-text">Skilled in Troubleshooting Software and Hardware</p>
+                        </div>  
+                    </div>  
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 text-white bg-my-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Software Tools</h5>
+                            <p class="card-text">Skilled in MS Office Word, Exel, PPT.</p>
+                        </div>  
+                    </div>  
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 text-white bg-my-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Beginner in 3d Modeling</h5>
+                            <p class="card-text">Create Basic 3d Scenes In Blender.</p>
+                        </div>  
+                    </div>  
+                </div>
+                <div class="col-md-4 mb-3">''
+                    <div class="card h-100 text-white bg-my-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Video and Image Editing</h5>
+                            <p class="card-text">Beginner in Video Editing and Image Editing in Photoshop.</p>
+                        </div>  
+                    </div>  
+                </div>
+                <div class="col-md-4 mb-3">''
+                    <div class="card h-100 text-white bg-my-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Database Management</h5>
+                            <p class="card-text">Skilled in MySql, Postgre, Pyton and database analysis.</p>
+                        </div>  
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="projects-container" id="projects">
+        <h3 class="text-center">Projects</h3>
+        <div class="container py-5">
+            <div class="row text-center mx-auto justify-content-center">
+
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 text-white bg-my-card">
+                        <a href="https://jhodel-fonte.github.io/me_and_myCats/" target="_blank">
+                            <img src="img/card-1.png" class="card-img-top" alt="Project 1">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">My Introduction</h5> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 text-white bg-my-card">
+                        <a href="https://jhodel-fonte.github.io/WebDevelopment_Activity-2/" target="_blank">
+                            <img src="img/CARD-2.png" class="card-img-top" alt="Project 2">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Game Inventory</h5> 
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 text-white bg-my-card">
+                        <a href="https://jhodel-fonte.github.io/Cat_Activity3/" target="_blank">
+                            <img src="img/image.png" class="card-img-top" alt="Project 3">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Login System</h5> 
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="col-md-6 mb-3 mx-auto">
+                    <div class="card h-100 text-white bg-my-card">
+                        <a href="" target="_blank">
+                            <img src="" class="card-img-top" alt="Inventory Management System Snapshot">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Inventory Management System</h5> 
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100 text-white bg-my-card">
+                        <a href="#" target="_blank">
+                            <img src="img/project-5.png" class="card-img-top" alt="My Portfolio Snapshot">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">My Portfolio</h5> 
+                        </div>
+                    </div>
+                </div>      
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+            <footer class="text-center text-white bg-dark py-3">
+        <p>&copy; 2024 Ralph Joedel Fonte. All rights reserved.</p>
+    </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

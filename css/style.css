@@ -1,0 +1,190 @@
+body { 
+    /* background-color: #1b2631 !important; */
+    background-color: #000000 !important;
+}
+
+.mine-navbar {
+    border-radius: 10px !important;
+    margin: 30px 100px !important;
+    font-size: 1.3rem !important;
+    padding: 10px 30px !important;
+    color: white !important;
+    font-family: "Jomolhari", serif;
+    font-weight: 500;
+    font-style: normal;
+    /* background-color: rgba(34, 39, 44, 0.349) !important; */
+}
+
+.navbar-brand {
+    font-size: 1.5rem !important;
+}
+
+.mine-navbar .navbar-brand, .mine-navbar .nav-link {
+    color: wheat !important;
+    /* gap: 50px !important  ; */
+}
+
+.front-page {
+    height: 10vh;
+    background-color: rgb(75, 137, 192);
+    margin: 30px 100px !important;
+    padding: 5px 30px !important;
+
+}
+
+#contactCardModal .modal-dialog {
+    max-width: 1500px !important;
+    width: 90vw !important;
+    height: auto !important;
+}
+
+ 
+.bg-image-man img {
+    /* clip-path: circle(50%); */
+    max-width: 100%;
+    width: 400px;
+    opacity: 0.8 !important;
+    left: auto;
+}
+
+.front-page {
+    height: 60vh;
+    background-color: rgba(21, 22, 22, 0.459);
+    margin: 160px 100px !important;
+    padding: 5px 30px !important;
+    /* border-radius: 20px; */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(50, 51, 65, 0.37);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.front-page .text-intro {
+    max-width: 600px;
+    margin-left: 70px;
+    margin-right: 30px;
+    margin-top: 100px;
+}
+
+.skills-data-card h3, .projects-container h3 {
+    color: wheat !important;
+    font-family: "Jomolhari", serif;
+    font-weight: 500;
+    font-style: normal;
+    /* margin: 20px 0px 10px 100px !important; */
+}
+
+.bg-my-card {
+    background-color: #22272c !important;
+    color: wheat !important;
+    box-shadow: 0 4px 16px rgba(50, 51, 65, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.12);
+}
+
+@media (max-width: 991px) {
+    #contactCardModal .modal-dialog {
+        max-width: 98vw !important;
+        width: 98vw;
+    }
+
+    .bg-image-man img {
+        max-width: 200px;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .mine-navbar {
+        margin: 20px 30px !important;
+        padding: 10px 10px !important;
+    }
+
+    .front-page {
+        flex-direction: column-reverse !important;
+        padding: 50px !important;
+        gap: 20px !important;
+        max-height: fit-content !important;
+        height: auto !important;
+        text-align: center !important;
+        margin: 5% !important;
+        padding: 10px 5px 0px 0px !important;
+        margin-top: 130px !important;
+
+    }
+
+    .front-page .text-intro {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        padding: 0px 5px !important;
+    }
+    .front-page .bg-image-man img {
+        max-width: 200px !important;}
+
+}
+
+@media (max-width: 680px) {
+    .front-page {
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        padding: 20px 10px !important;
+        margin-top: 120px !important;
+        height: auto !important;
+    }
+    .front-page .text-intro {
+        margin: 0 !important;
+        padding: 0 5px !important;
+        max-width: 100% !important;
+    }
+    .front-page .bg-image-man {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .front-page .bg-image-man img {
+        max-width: 180px !important;
+        margin-bottom: 10px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .mine-navbar {
+        margin: 20px 10px !important;
+        padding: 10px 10px !important;
+    }
+
+    .navbar-brand {
+    font-size: 1rem !important;
+    }
+
+    .front-page .bg-image-man img {
+        max-width: 100px !important;
+        }
+
+}
+
+@media (max-width: 320px) {
+
+
+}
+
+.skills-data-card .Background-light {
+    background-color: #22272c !important;
+    color: wheat !important;
+    box-shadow: 0 4px 16px rgba(50, 51, 65, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.12);
+}
+
+.skills-data-card .row .col {
+    background-color: rgba(34, 39, 44, 0.85);
+    color: wheat;
+    margin: 8px 0;
+    border-radius: 8px;
+    padding: 18px 0;
+    box-shadow: 0 2px 8px rgba(50, 51, 65, 0.12);
+    border: 1px solid rgba(255,255,255,0.08);
+}
