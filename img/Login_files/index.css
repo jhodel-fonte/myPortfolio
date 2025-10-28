@@ -1,0 +1,75 @@
+body {
+    background-image: url("../img/bg-image.jpg");
+
+    margin: 0;
+    padding: 0; 
+    color: white; 
+}
+
+.mainCard {
+    width: 400px; 
+    height: fit-content;
+    margin-top: 20vh;
+    /* margin-top: 50vh; */
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.9px);
+    -webkit-backdrop-filter: blur(10.9px);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+}
+
+.mainCard input[type="text"], .mainCard input[type="password"] {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+}
+
+ .mainCard input::placeholder {
+    background: transparent;
+    color: white;
+    /* background-color: aqua; */
+}
+
+#forgotPassword {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+form button {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 20px !important;
+    background-color: rgba(34, 206, 100, 0.815) !important;
+    color: black !important;
+    font-weight: bold;
+    border: none !important;
+}
+
+#textReg a, #text-forgot a {
+    color: white !important;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+#textReg a:hover, #text-forgot a:hover {
+    text-decoration: underline !important;
+    color: white !important;
+}
+.error {
+    color: #f75252;
+}
+
+@media (max-width: 425px) {
+    .mainCard {
+        width: 90%;
+    }
+}
+
+@media (max-width: 320px) {
+    .mainCard {
+        width: 270px;
+        
+    }
+}

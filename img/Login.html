@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://127.0.0.1:5500/?uname=saasa&pass=&test= -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- // Bootstrap CSS -->
+    <link href="./Login_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Login_files/index.css">
+    <!-- Logo -->
+    <link rel="shortcut icon" href="http://127.0.0.1:5500/img/big_cat.jpg" type="image/x-icon">
+    <!-- jquery -->
+    <script src="./Login_files/jquery-3.7.1.js.download" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./Login_files/jquery.validate.min.js.download" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="mainCard mx-auto p-4 container-fluid">
+        <form id="loginForm" novalidate="novalidate">
+            <h2 class="text-center mb-3">Login</h2>
+            <div class="mb-3">
+                <label for="username" class="form-label">Username or Email</label>
+                <input type="text" class="form-control valid" placeholder="Enter your username" id="username" name="uname" aria-invalid="false"><label id="username-error" class="error" for="username" style="display: none;"></label>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control error" id="password" name="pass" placeholder="Enter your password"><label id="password-error" class="error" for="password">This field is required.</label>
+            </div>
+            <div class="text-end mb-1" id="text-forgot">
+                <a href="http://127.0.0.1:5500/?uname=saasa&amp;pass=&amp;test=">Forgot Password?</a>
+            </div>
+            <div id="loginBtn">
+                <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+
+            <div id="textReg" class="text-start">
+                <p>Don't have account? <a href="http://127.0.0.1:5500/?uname=saasa&amp;pass=&amp;test=">Register</a> </p> 
+            </div>
+            <div>
+                <input type="text" id="test" name="test" readonly="">
+            </div>
+        </form>
+
+        <script>
+var usernameElement = document.getElementById("username");
+
+if (usernameElement) { 
+    let usernameValue = usernameElement.value; 
+  
+
+    let n = usernameValue.match(/[0-9]/g);
+
+    document.getElementById("test").innerHTML = n;
+}
+ 
+
+            
+        $(document).ready(function() {
+            
+            $("#loginForm").validate({
+                rules: {
+                    uname: {
+                        required: true,
+                        minlength: 8,
+                        maxlength: 30
+                    },
+                    pass: {
+                        required: true,
+                        minlength: 6,
+                        maxlength: 20
+                    }
+
+                },
+                messages: {
+                    username: {
+                        required: "Please enter your username",
+                        minlength: "Username's length must be at least 8 characters",
+                        maxlength: "Username's length must not exceed 30 characters"
+                    }  
+                }
+                
+            });
+        })
+    </script>
+    
+
+    </div>
+
+    <script src="./Login_files/bootstrap.bundle.min.js.download" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
